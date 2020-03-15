@@ -1,0 +1,209 @@
+<nav class="navbar  navbar-light bg-light  fixed-top">
+
+  <a class="navbar-brand"><img src="assets\images\icon.png" width="100" height="100"></a>
+
+  <button type="button" class="navbar-toggler navbar-toggler-right bg-light" data-toggle="collapse" data-target="#nav">
+
+    <span class="navbar-toggler-icon my-toggler"></span>
+
+  </button>
+
+  <div class="collapse navbar-collapse justify-content-between" id="nav">
+
+    <ul class="navbar-nav">
+
+      <li class="nav-item">
+
+        <a class="nav-link text-dark font-weight-bold px-3" href="#">HOME</a>
+
+      </li>
+      <li class="nav-item">
+
+        <a class="nav-link text-dark font-weight-bold px-3" href="fashion">FASHION</a>
+
+      </li>
+      <li class="nav-item">
+
+        <a class="nav-link text-dark font-weight-bold px-3" href="fsub">FURNITURE</a>
+
+      </li>
+
+      <li class="nav-item">
+
+        <a class="nav-link text-dark font-weight-bold px-3" href="esub">ELECTRONICS</a>
+
+      </li>
+
+
+      <li class="nav-item">
+
+        <a class="nav-link text-dark font-weight-bold px-3" href="cart">CART</a>
+
+      </li>
+
+      <li class="nav-item">
+
+        <a class="nav-link text-dark font-weight-bold px-3" href="contact">CONTACT</a>
+
+      </li>
+      <li class="nav-item">
+
+        <a class="nav-link text-dark font-weight-bold px-3" href="">LOGOUT</a>
+
+      </li>
+
+    </ul>
+  </div>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+    <form class="form-inline ml-auto">
+      <div class="md-form my-0">
+        <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+      </div>
+      <button href="#!" class="btn btn-light btn-md my-0 ml-sm-2" type="submit">Search</button>
+    </form>
+
+
+
+  </div>
+</nav>
+<div class="bg-img">
+  <div class="row">
+    <div class="card" style="width:20rem;">
+
+      <img class="card-img-top" src="assets\images\wf1.jpg" alt="Card image cap">
+
+
+      <div class="card-body">
+        <h4 class="card-title"><a>PRICE : 5000</a></h4>
+        <div class="btn-group">
+          <button class="btn btn-primary" (click)="save()">ADD TO CART</button>
+          <button class="btn btn-primary" (click)="toggle()" id="bt">
+            {{buttonName}}
+          </button>
+        </div>
+
+        <div *ngIf="show">
+          <h5>Blue faded casual denim shirt, has a spread collar, button placket, 2 pockets, long sleeves, curved hem
+          </h5>
+
+          <h3><b>Size & Fit</b></h3>
+          Slim fit
+          The model (height 6') is wearing a size 40
+
+          <h3><b>Material & Care</b></h3>
+          Cotton Denim
+          Machine-wash
+        </div>
+
+
+      </div>
+
+    </div>
+
+    <div class="card" style="width:20rem;">
+
+
+      <img class="card-img-top" src="assets\images\wf2.jpg" alt="Card image cap">
+
+
+      <div class="card-body">
+
+
+        <h4 class="card-title"><a>PRICE:6000</a></h4>
+
+        <div class="btn-group">
+          <button class="btn btn-primary" (click)="save()">ADD TO CART</button>
+          <button class="btn btn-primary" (click)="toggle1()" id="but">
+            {{buttonName}}
+          </button>
+        </div>
+
+        <div *ngIf="show1">
+          <h5>Lehange choli with embroid design
+          </h5>
+
+          <h3><b>Size & Fit</b></h3>
+          Xs
+          The model (height 6') is wearing a size 40
+
+          <h3><b>Material & Care</b></h3>
+          Cotton 
+          Dry-wash
+        </div>
+
+      </div>
+
+    </div>
+    <div class="card" style="width:20rem;">
+
+
+      <img class="card-img-top" src="assets\images\wf3.jpg" alt="Card image cap">
+
+
+      <div class="card-body">
+
+
+        <h4 class="card-title"><a>PRICE:4000</a></h4>
+
+        <div class="btn-group">
+          <button class="btn btn-primary" (click)="save()">ADD TO CART</button>
+          <button class="btn btn-primary" (click)="toggle2()" id="bt2">
+            {{buttonName}}
+          </button>
+        </div>
+
+        <div *ngIf="show2">
+          <h5>Brick Red dress, 
+            has a Collar-neck, 3/4th sleeves, concealed zip closure, an attached lining, and flared hem
+          </h5>
+
+          <h3><b>Size & Fit</b></h3>
+          Semi-Fit
+    The model (height 5'8") is wearing a size S
+
+          <h3><b>Material & Care</b></h3>
+          Material: 100% Polyester
+          Machine Wash
+        </div>
+
+
+
+      </div>
+
+    </div>
+    <div class="card" style="width:20rem;">
+
+
+      <img class="card-img-top" src="assets\images\wf4.jpg" alt="Card image cap">
+
+
+      <div class="card-body">
+
+
+        <h4 class="card-title"><a>PRICE:5000</a></h4>
+
+        <div class="btn-group">
+          <button class="btn btn-primary" (click)="save()">ADD TO CART</button>
+          <button class="btn btn-primary" (click)="toggle3()" id="bt3">
+            {{buttonName}}
+          </button>
+        </div>
+
+        <div *ngIf="show3">
+          <h5>Pink and rust red printed A-line panelled skirt, has a partially elasticated waistband, button detail on the front, flared hem, and attached lining
+          </h5>
+
+          <h3><b>Size & Fit</b></h3>
+          The model (height 5'8") is wearing a size 28
+          <h3><b>Material & Care</b></h3>
+          100% Polyester
+          Machine wash
+        </div>
+
+
+
+      <!-- </div>
+</div> -->
+    </div>

@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" /> 
+    </head>
+ <body>  
+    <nav class="navbar navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">
+          <img src="/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+         EMART
+        </a>
+      </nav>
+    <div class="bg-img">
+      <form #user="ngForm"  class="text-center border border-light p-5" action="#!" (ngSubmit)="signIn()">
+       
+        <p class="h4 mb-4">Sign in</p>
+    
+       
+        <input type="email" name="defaultLoginFormEmail"  id="userName" #userName class="form-control mb-4" placeholder="E-mail" [(ngModel)]="buyer.Email" [(ngModel)]="user.userName"  minlength="12" #em="ngModel" required="required" >
+        <div  *ngIf="(em.touched||em.dirty)&&em.invalid">
+          <small   class="text-danger" *ngIf="em.errors.required">Can not be left blank</small>
+           </div><br>
+    
+       
+        <input type="password" name="defaultLoginFormPassword" class="form-control mb-4" placeholder="Password"  [(ngModel)]="buyer.password" [(ngModel)]="user.password"  minlength="5" #m="ngModel" required="required">
+        <div  *ngIf="(m.touched||m.dirty)&&m.invalid">
+          <small   class="text-danger" *ngIf="m.errors.required">Can not be left blank</small>
+          <small  class="text-danger"  *ngIf="m.errors.minlength">Can not be less than 5characters</small>
+           </div>
+        <div class="d-flex justify-content-around">
+            
+            <div>
+               
+                <a href="sfp">Forgot password?</a>
+            </div>
+        </div>
+    
+      
+        <button  class="btn btn-info btn-primary  my-4" (click)="ngSubmit" >Sign in</button>
+       
+       
+        <p>Not a member?
+          <a href="sreg">Register Here</a>
+        </p>
+
+    
+    </form>
+    </div>
+  
+</body> 
+  </html>
